@@ -22,7 +22,7 @@ export default {
     let profiles;
     try {
       profiles = yaml.safeLoad(fs.readFileSync('/home/ixti/example.yml', 'utf8'));
-      console.log(profiles);
+      // console.log(profiles);
     } catch (e) {
       console.log(e);
     }

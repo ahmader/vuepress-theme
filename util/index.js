@@ -160,7 +160,7 @@ export function resolveSidebarItems (page, regularPath, site, localePath) {
  */
 export function resolveTocItems (page, regularPath, site, localePath) {
   const { pages, themeConfig } = site
-console.log('resolveTocItems', { page } );
+  // console.log('resolveTocItems', { page } );
   const localeConfig = localePath && themeConfig.locales
     ? themeConfig.locales[localePath] || themeConfig
     : themeConfig
@@ -168,7 +168,7 @@ console.log('resolveTocItems', { page } );
   const pageTocbarTitle = page.frontmatter.tocTitle || localeConfig.tocTitle || themeConfig.tocTitle
   const pageTocbarConfig = page.frontmatter.tocbar || localeConfig.tocbar || themeConfig.tocbar
   
-  console.log('resolveTocItems-1', pageTocbarConfig );
+  // console.log('resolveTocItems-1', pageTocbarConfig );
   if (pageTocbarConfig === 'auto' || pageTocbarConfig === true) {
     // if (pageTocbarTitle) {
       // if (!pageTocbarTitle) {
@@ -191,16 +191,16 @@ console.log('resolveTocItems', { page } );
     // }
   }
   const tocbarConfig = localeConfig.tocbar || themeConfig.tocbar
-  console.log('resolveTocItems-2', regularPath, tocbarConfig );
+  // console.log('resolveTocItems-2', regularPath, tocbarConfig );
   if (!tocbarConfig) {
-    console.log('resolveTocItems-2-1', [] );
+    // console.log('resolveTocItems-2-1', [] );
     return []
   } else {
     const newPage = {...page};
     newPage.headers = page.headers ? page.headers.filter(h => h.level === 2) : false;
     if ( !newPage.headers || newPage.headers.length===0 ) return [];
     const { base, config } = resolveMatchingConfig(regularPath, tocbarConfig)
-    console.log('resolveTocItems-2-2', pageTocbarTitle, page );
+    // console.log('resolveTocItems-2-2', pageTocbarTitle, page );
     // return resolveItem(page, pages, base);
     // if (config === 'auto') {
       if (page.frontmatter.tocTitle === false) {

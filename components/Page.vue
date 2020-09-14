@@ -32,8 +32,8 @@ export default {
   props: ['sidebarItems'],
   computed: {
     authors() {
-      console.log(this);
-      console.log(this.$parent.$children);
+      // console.log(this);
+      // console.log(this.$parent.$children);
       return this.$page.authors;
     },
   },

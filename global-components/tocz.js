@@ -80,7 +80,7 @@ export default {
         item.children ? renderHeaders(item.children) : null,
       ])))
     }
-console.log('this.class ->', JSON.stringify(this.className), this.className);
+    // console.log('this.class ->', JSON.stringify(this.className), this.className);
     return h('div', {class: this.className}, [
       renderTitle(this.title),
       renderHeaders(this.headers),
