@@ -1,6 +1,6 @@
 {
-  "name": "vuepress-theme",
-  "version": "1.0.0",
+  "name": "ahmader-vuepress-theme",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/ahmader/vuepress-theme.git",
   "author": "ahmader <ahmader@gmail.com>",
