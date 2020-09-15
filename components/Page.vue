@@ -13,7 +13,7 @@
       <!-- <pre><code>{{JSON.stringify(Object.keys(this.$parent.$children), null, 2)}}</code></pre> -->
       <!-- <pre><code>{{JSON.stringify($parent.$children, null, 2)}}</code></pre> -->
       <!-- <pre><code>{{JSON.stringify($options.propsData, null, 2)}}</code></pre> -->
-      <pre><code>{{JSON.stringify($page, null, 2)}}</code></pre>
+      <!-- <pre><code>{{JSON.stringify($page, null, 2)}}</code></pre> -->
     </div>
     
     <PageEdit />

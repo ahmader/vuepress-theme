@@ -43,16 +43,16 @@ export default {
 
     const displayAllHeaders = $themeLocaleConfig.displayAllHeaders
       || $themeConfig.displayAllHeaders
-console.log('displayAllHeaders', maxDepth);
+    // console.log('displayAllHeaders', maxDepth);
     if (item.type === 'auto') {
-      console.log('displayAllHeaders-1');
+      // console.log('displayAllHeaders-1');
       return [link, renderChildren(h, item.children, item.basePath, $route, maxDepth)]
     // } else if ((active || displayAllHeaders) && item.headers && !hashRE.test(item.path)) {
     //   const children = groupHeaders(item.headers)
     //   console.log('displayAllHeaders-2', children);
     //   return [link, renderChildren(h, children, item.path, $route, maxDepth)]
     } else {
-      console.log('displayAllHeaders-3', link);
+      // console.log('displayAllHeaders-3', link);
       return link
     }
   }
