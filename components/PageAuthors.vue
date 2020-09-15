@@ -1,5 +1,5 @@
 <template>
-  <div class="page-author">
+  <div class="page-author" v-if="!!authors">
     <h5>Maintained by:</h5>
     <ul>
       <li v-for="author in authors" :key="author.username">
@@ -19,6 +19,7 @@ export default {
 
   computed: {
     authors() {
+      if (this.$themeConfig.authors===false) return null;
       return this.$page.authors;
     },
   },
