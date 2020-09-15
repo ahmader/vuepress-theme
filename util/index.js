@@ -124,7 +124,7 @@ function resolvePath (relative, base, append) {
  */
 export function resolveSidebarItems (page, regularPath, site, localePath) {
   const { pages, themeConfig } = site
-  console.log('resolveSidebarItems', { page } );
+  // console.log('resolveSidebarItems', { page } );
   const localeConfig = localePath && themeConfig.locales
     ? themeConfig.locales[localePath] || themeConfig
     : themeConfig
